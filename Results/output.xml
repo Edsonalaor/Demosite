@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20230116 11:02:21.681" rpa="false" schemaversion="3">
+<suite id="s1" name="Demoautomation test" source="E:\Beckaup\Automação\AutomaçãoDemoSite\Teste\Demoautomation_test.robot">
+<test id="s1-t1" name="CT01-Preencher dados" line="18">
+<kw name="Abrir Navegador" library="Demoautomation_steps" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230116 11:02:22.961" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230116 11:02:22.959" endtime="20230116 11:02:27.957"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230116 11:02:27.958" endtime="20230116 11:02:28.228"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:28.903" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:28.229" endtime="20230116 11:02:28.904"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:22.957" endtime="20230116 11:02:28.904"/>
+</kw>
+<kw name="Acessar Home Page" library="Demoautomation_steps">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230116 11:02:28.912" level="INFO">Opening url 'https://demo.automationtesting.in/Register.html'</msg>
+<status status="PASS" starttime="20230116 11:02:28.911" endtime="20230116 11:02:36.984"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:02:37.988" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230116 11:02:36.985" endtime="20230116 11:02:37.988"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:28.909" endtime="20230116 11:02:37.989"/>
+</kw>
+<kw name="Verificar se aparece a Frase Register" library="Demoautomation_steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:02:38.992" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230116 11:02:37.991" endtime="20230116 11:02:38.992"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Site}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:38.993" endtime="20230116 11:02:39.193"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:39.419" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:39.193" endtime="20230116 11:02:39.420"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:37.990" endtime="20230116 11:02:39.420"/>
+</kw>
+<kw name="Preencher First Nome" library="Demoautomation_steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:02:40.424" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230116 11:02:39.422" endtime="20230116 11:02:40.424"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Nome}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:40.424" endtime="20230116 11:02:40.500"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:40.837" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:40.500" endtime="20230116 11:02:40.837"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Campo_Nome}</arg>
+<arg>${First_Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:40.841" level="INFO">Typing text 'Edson' into text field '//input[contains(@placeholder,'First Name')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:40.837" endtime="20230116 11:02:41.188"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:41.582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:41.189" endtime="20230116 11:02:41.583"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:39.421" endtime="20230116 11:02:41.583"/>
+</kw>
+<kw name="Preenche Last Nome" library="Demoautomation_steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:02:42.693" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230116 11:02:41.692" endtime="20230116 11:02:42.693"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Name_Meio}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:42.694" endtime="20230116 11:02:42.754"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:42.996" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:42.754" endtime="20230116 11:02:42.996"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Name_Meio}</arg>
+<arg>${Last_Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:42.998" level="INFO">Typing text 'Alaor' into text field '//input[contains(@placeholder,'Last Name')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:42.997" endtime="20230116 11:02:43.353"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:43.593" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:43.354" endtime="20230116 11:02:43.593"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:41.685" endtime="20230116 11:02:43.593"/>
+</kw>
+<kw name="Preencher Endereço" library="Demoautomation_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Dress}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:43.637" endtime="20230116 11:02:43.805"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:44.054" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:43.806" endtime="20230116 11:02:44.055"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Dress}</arg>
+<arg>${Endereço}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:44.057" level="INFO">Typing text 'Rua Pedro André Numero 20' into text field '//textarea[contains(@rows,'3')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:44.055" endtime="20230116 11:02:44.856"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:45.133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:44.857" endtime="20230116 11:02:45.133"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:43.636" endtime="20230116 11:02:45.133"/>
+</kw>
+<kw name="Endereço de e-mail" library="Demoautomation_steps">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:02:48.139" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230116 11:02:45.137" endtime="20230116 11:02:48.139"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:48.140" endtime="20230116 11:02:48.191"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>${Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:48.193" level="INFO">Typing text 'edson.alaor@Yahoo.com.br' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20230116 11:02:48.192" endtime="20230116 11:02:48.631"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:48.871" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:48.632" endtime="20230116 11:02:48.872"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:45.136" endtime="20230116 11:02:48.872"/>
+</kw>
+<kw name="Preencher Telefone" library="Demoautomation_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Phone}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:48.878" endtime="20230116 11:02:48.964"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:49.208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:48.964" endtime="20230116 11:02:49.208"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Phone}</arg>
+<arg>${Telefone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:49.210" level="INFO">Typing text '11 947163471' into text field '//input[@ng-model='Phone']'.</msg>
+<status status="PASS" starttime="20230116 11:02:49.208" endtime="20230116 11:02:49.651"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:49.916" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:49.651" endtime="20230116 11:02:49.916"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:48.877" endtime="20230116 11:02:49.916"/>
+</kw>
+<kw name="Selecione Genero &quot;Male&quot;" library="Demoautomation_steps" sourcename="Selecione Genero &quot;${Gender}&quot;">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:50.182" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:49.919" endtime="20230116 11:02:50.182"/>
+</kw>
+<kw name="Escolha o Genero" library="Metodos_steps">
+<arg>${Gender}</arg>
+<if>
+<branch type="IF" condition="'${Gender}'== 'Male'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Male}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:50.184" level="INFO">Clicking element '//input[@value='Male']'.</msg>
+<status status="PASS" starttime="20230116 11:02:50.183" endtime="20230116 11:02:50.399"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:50.183" endtime="20230116 11:02:50.399"/>
+</branch>
+<branch type="ELSE IF" condition="'${Gender}' == 'Female'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Female}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230116 11:02:50.399" endtime="20230116 11:02:50.399"/>
+</kw>
+<status status="NOT RUN" starttime="20230116 11:02:50.399" endtime="20230116 11:02:50.399"/>
+</branch>
+<status status="PASS" starttime="20230116 11:02:50.183" endtime="20230116 11:02:50.400"/>
+</if>
+<status status="PASS" starttime="20230116 11:02:50.182" endtime="20230116 11:02:50.400"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:49.919" endtime="20230116 11:02:50.400"/>
+</kw>
+<kw name="Selecione Hobbies" library="Demoautomation_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Hobie}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:50.425" endtime="20230116 11:02:50.510"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:50.957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:50.511" endtime="20230116 11:02:50.957"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Escolha}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:50.959" level="INFO">Clicking button '//input[@value='Movies']'.</msg>
+<status status="PASS" starttime="20230116 11:02:50.958" endtime="20230116 11:02:51.288"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:50.425" endtime="20230116 11:02:51.289"/>
+</kw>
+<kw name="Selecione Linguagem &quot;Danish&quot;" library="Demoautomation_steps" sourcename="Selecione Linguagem &quot;${Languages}&quot;">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:51.592" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:51.298" endtime="20230116 11:02:51.593"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Campo_Language}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:51.595" level="INFO">Clicking element '//div[@class='ui-autocomplete-multiselect ui-state-default ui-widget']'.</msg>
+<status status="PASS" starttime="20230116 11:02:51.593" endtime="20230116 11:02:51.904"/>
+</kw>
+<kw name="Escolha Linguagem" library="Metodos_steps">
+<arg>${Languages}</arg>
+<if>
+<branch type="IF" condition="'${Languages}' == 'Danish'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Danish}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:51.907" level="INFO">Clicking element '//a[contains(.,'Danish')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:51.906" endtime="20230116 11:02:52.069"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:51.906" endtime="20230116 11:02:52.069"/>
+</branch>
+<branch type="ELSE IF" condition="'${Languages}' == 'Catalan'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Catalan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230116 11:02:52.070" endtime="20230116 11:02:52.070"/>
+</kw>
+<status status="NOT RUN" starttime="20230116 11:02:52.070" endtime="20230116 11:02:52.070"/>
+</branch>
+<status status="PASS" starttime="20230116 11:02:51.905" endtime="20230116 11:02:52.071"/>
+</if>
+<status status="PASS" starttime="20230116 11:02:51.904" endtime="20230116 11:02:52.071"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:52.423" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:52.072" endtime="20230116 11:02:52.423"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Titulo_Language}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:52.425" level="INFO">Clicking element '//label[contains(.,'Languages')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:52.423" endtime="20230116 11:02:52.597"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:51.297" endtime="20230116 11:02:52.597"/>
+</kw>
+<kw name="Selecione Habilidades &quot;Select&quot;" library="Demoautomation_steps" sourcename="Selecione Habilidades &quot;${Skill}&quot;">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:52.957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:52.603" endtime="20230116 11:02:52.958"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Campo_Skill}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:52.960" level="INFO">Clicking element '//select[contains(@ng-model,'Skill')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:52.958" endtime="20230116 11:02:54.052"/>
+</kw>
+<kw name="Escolha Habilidades" library="Metodos_steps">
+<arg>${Skill}</arg>
+<if>
+<branch type="IF" condition="'${Skill}' == 'Select'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:54.058" level="INFO">Clicking element '//option[@value='Art Design'][contains(.,'Art Design')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:54.056" endtime="20230116 11:02:54.520"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:54.056" endtime="20230116 11:02:54.521"/>
+</branch>
+<branch type="ELSE IF" condition="'${Skill}' == 'Fotoshop'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Fotoshop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230116 11:02:54.522" endtime="20230116 11:02:54.522"/>
+</kw>
+<status status="NOT RUN" starttime="20230116 11:02:54.521" endtime="20230116 11:02:54.523"/>
+</branch>
+<status status="PASS" starttime="20230116 11:02:54.056" endtime="20230116 11:02:54.523"/>
+</if>
+<status status="PASS" starttime="20230116 11:02:54.052" endtime="20230116 11:02:54.524"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:55.016" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:54.524" endtime="20230116 11:02:55.017"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:55.018" level="INFO">Clicking element '//option[@value='Art Design'][contains(.,'Art Design')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:55.017" endtime="20230116 11:02:55.184"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:52.602" endtime="20230116 11:02:55.185"/>
+</kw>
+<kw name="Selecione Pais" library="Demoautomation_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Pais}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:02:55.198" endtime="20230116 11:02:55.398"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:56.670" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:55.398" endtime="20230116 11:02:56.671"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Campo_Pais}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:56.673" level="INFO">Clicking element '//span[contains(@aria-haspopup,'true')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:56.671" endtime="20230116 11:02:57.713"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:58.197" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:57.714" endtime="20230116 11:02:58.197"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Pais_EUA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:02:58.199" level="INFO">Clicking element '//li[contains(.,'United States of America')]'.</msg>
+<status status="PASS" starttime="20230116 11:02:58.197" endtime="20230116 11:02:58.697"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:02:59.205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:02:58.698" endtime="20230116 11:02:59.205"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:03:01.207" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230116 11:02:59.206" endtime="20230116 11:03:01.207"/>
+</kw>
+<status status="PASS" starttime="20230116 11:02:55.197" endtime="20230116 11:03:01.208"/>
+</kw>
+<kw name="Selecionar Ano" library="Demoautomation_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Ano}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:01.247" endtime="20230116 11:03:01.422"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:01.878" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:01.422" endtime="20230116 11:03:01.878"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Campo_Ano}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:01.880" level="INFO">Clicking element '//select[@placeholder='Year']'.</msg>
+<status status="PASS" starttime="20230116 11:03:01.878" endtime="20230116 11:03:02.493"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:02.909" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:02.493" endtime="20230116 11:03:02.910"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Date}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:02.910" endtime="20230116 11:03:03.046"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:03.048" level="INFO">Clicking element '//option[contains(@value,'1957')]'.</msg>
+<status status="PASS" starttime="20230116 11:03:03.047" endtime="20230116 11:03:03.674"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:04.392" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:03.674" endtime="20230116 11:03:04.393"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Mes}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:04.393" endtime="20230116 11:03:04.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Campo_Mes}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:04.529" level="INFO">Clicking element '//select[@placeholder='Month']'.</msg>
+<status status="PASS" starttime="20230116 11:03:04.528" endtime="20230116 11:03:05.042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Mes}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:05.042" endtime="20230116 11:03:05.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Mes}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:05.268" level="INFO">Clicking element '//option[@value='April']'.</msg>
+<status status="PASS" starttime="20230116 11:03:05.265" endtime="20230116 11:03:05.655"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:06.039" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:05.655" endtime="20230116 11:03:06.040"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Dia}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:06.040" endtime="20230116 11:03:06.229"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Campo_Dia}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:06.231" level="INFO">Clicking element '//select[contains(@placeholder,'Day')]'.</msg>
+<status status="PASS" starttime="20230116 11:03:06.229" endtime="20230116 11:03:06.924"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:07.425" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:06.925" endtime="20230116 11:03:07.425"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Dia}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:07.425" endtime="20230116 11:03:07.526"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Dia}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:07.530" level="INFO">Clicking element '//option[@value='21']'.</msg>
+<status status="PASS" starttime="20230116 11:03:07.527" endtime="20230116 11:03:07.840"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:08.243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:07.840" endtime="20230116 11:03:08.244"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:03:10.245" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230116 11:03:08.245" endtime="20230116 11:03:10.247"/>
+</kw>
+<status status="PASS" starttime="20230116 11:03:01.246" endtime="20230116 11:03:10.248"/>
+</kw>
+<kw name="Senha" library="Demoautomation_steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Campo_Senha}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:10.262" endtime="20230116 11:03:10.581"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:11.035" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:10.581" endtime="20230116 11:03:11.035"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Campo_Senha}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:11.038" level="INFO">Typing text 'Caicara 1313' into text field '//input[contains(@id,'firstpassword')]'.</msg>
+<status status="PASS" starttime="20230116 11:03:11.036" endtime="20230116 11:03:12.027"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:12.350" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:12.027" endtime="20230116 11:03:12.351"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Confirmar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230116 11:03:12.351" endtime="20230116 11:03:12.429"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Confirmar}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230116 11:03:12.433" level="INFO">Typing text 'Caicara 1313' into text field '//input[contains(@id,'secondpassword')]'.</msg>
+<status status="PASS" starttime="20230116 11:03:12.430" endtime="20230116 11:03:13.482"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230116 11:03:13.735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230116 11:03:13.482" endtime="20230116 11:03:13.735"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230116 11:03:15.737" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230116 11:03:13.736" endtime="20230116 11:03:15.737"/>
+</kw>
+<status status="PASS" starttime="20230116 11:03:10.260" endtime="20230116 11:03:15.737"/>
+</kw>
+<doc>Esse teste realiza o Preenchimento de Dados no Registro no site Demo</doc>
+<tag>Registro</tag>
+<status status="PASS" starttime="20230116 11:02:22.955" endtime="20230116 11:03:15.740"/>
+</test>
+<doc>Esse Teste Preenche Registro de Pessas no site https://demo.automationtesting.in/Register.html</doc>
+<status status="PASS" starttime="20230116 11:02:21.686" endtime="20230116 11:03:15.757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Registro</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demoautomation test">Demoautomation test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230116 11:02:22.884" level="ERROR">Error in file 'E:\Beckaup\Automação\AutomaçãoDemoSite\Teste\Demoautomation_test.robot' on line 12: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg timestamp="20230116 11:02:22.886" level="ERROR">Error in file 'E:\Beckaup\Automação\AutomaçãoDemoSite\steps\Metodos_steps.robot' on line 2: Error in file 'E:\Beckaup\Automação\AutomaçãoDemoSite\Teste\Demoautomation_test.robot' on line 16: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
